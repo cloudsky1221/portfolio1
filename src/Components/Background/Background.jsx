@@ -1,6 +1,10 @@
+import "./Background.css"
+
 function Background() {
   return (
-    <div>Background</div>
+    <div className="canvas">
+      <div className="circle"></div>
+    </div>
   )
 }
 
