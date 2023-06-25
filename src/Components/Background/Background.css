@@ -1,6 +1,14 @@
-.canvas> .circle {
-    width:10rem;
-    height:10rem;
-    background-color: #fff;
-    border-radius: 50%;
+.canvas {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width:500px) {
+    .canvas {
+        display: none;
+    }
 }
