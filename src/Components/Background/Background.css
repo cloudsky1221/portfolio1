@@ -4,6 +4,8 @@
     width: 100vw;
     height: 100vh;
     position: absolute;
+    background-position: center;
+    background-size: cover;
     top: 0;
 }
 
