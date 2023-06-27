@@ -29,13 +29,12 @@ function Background() {
 
   function handlelisten(e) {
     e.preventDefault();
-    console.log(e.clientX, e.clientY)
     setmenu(true)
     setposition({x:e.clientY, y:e.clientX})
   }
 
   function removeMenu(e) {
-    console.log(e.clientX, e.clientY)
+    e.preventDefault()
     setmenu(false)
   }
 
