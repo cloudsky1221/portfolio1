@@ -1,4 +1,5 @@
 import './App.css'
+import AMworld from './Components/Apps/Api/AMworld/AMworld'
 
 import Background from './Components/Background/Background'
 
@@ -8,6 +9,7 @@ function App() {
     <>
     <div className="main">
       <div className="app">
+        <AMworld />
       </div>
     </div>
     <Background />
