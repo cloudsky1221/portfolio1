@@ -1,5 +1,5 @@
 import './App.css'
-import Anime from './Components/Apps/Api/Anime/Anime'
+import AMworld from './Components/Apps/Api/AMworld/AMworld'
 
 import Background from './Components/Background/Background'
 
@@ -9,7 +9,7 @@ function App() {
     <>
     <div className="main">
       <div className="app">
-        <Anime />
+        <AMworld />
       </div>
     </div>
     <Background />
