@@ -1,0 +1,244 @@
+.main-body {
+    width: 350px;
+    height: 644px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+
+
+/* Frame 11 */
+
+position: absolute;
+width: 328px;
+height: 46px;
+left: 27px;
+top: 44px;
+
+background: #CACACA;
+border-radius: 10px;
+
+
+/* material-symbols:search */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 13px;
+top: 7px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 12.5%;
+right: 12.5%;
+top: 12.5%;
+bottom: 12.5%;
+
+background: #000000;
+
+
+/* Frame 14 */
+
+position: absolute;
+width: 390px;
+height: 70px;
+left: 0px;
+top: 775px;
+
+background: #CACACA;
+
+
+/* Frame 16 */
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 34px;
+top: 5px;
+
+
+
+/* Home */
+
+position: absolute;
+width: 34px;
+height: 15px;
+left: 13px;
+top: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* ic:outline-home */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 14px;
+top: 8px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 3.12%;
+right: 3.12%;
+top: 9.38%;
+bottom: 10.94%;
+
+background: #000000;
+
+
+/* Frame 17 */
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 160px;
+top: 5px;
+
+
+
+/* You */
+
+position: absolute;
+width: 22px;
+height: 15px;
+left: 19px;
+top: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* gg:profile */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 14px;
+top: 8px;
+
+
+
+/* Group */
+
+position: absolute;
+left: 4.17%;
+right: 4.17%;
+top: 4.17%;
+bottom: 4.17%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 33.33%;
+right: 33.33%;
+top: 20.83%;
+bottom: 45.83%;
+
+background: #000000;
+
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 4.17%;
+top: 4.17%;
+bottom: 4.17%;
+
+background: #000000;
+
+
+/* Frame 18 */
+
+position: absolute;
+width: 60px;
+height: 60px;
+left: 286px;
+top: 5px;
+
+
+
+/* Cart */
+
+position: absolute;
+width: 25px;
+height: 15px;
+left: 18px;
+top: 40px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+/* identical to box height */
+
+color: #000000;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 28.33%;
+right: 27.22%;
+top: 21.67%;
+bottom: 33.89%;
+
+background: #000000;
+
+
+/* mdi:cart-outline */
+
+position: absolute;
+width: 32px;
+height: 32px;
+left: 14px;
+top: 8px;
+
+
+
+/* Frame 12 */
+
+position: absolute;
+width: 390px;
+height: 199px;
+left: 0px;
+top: 149px;
+
+background: #CACACA;
+
+
+/* Frame 15 */
+
+position: absolute;
+width: 390px;
+height: 254px;
+left: 0px;
+top: 500px;
+
+background: #CACACA;
