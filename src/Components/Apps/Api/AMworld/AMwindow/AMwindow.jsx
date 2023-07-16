@@ -29,7 +29,7 @@ function AMwindow({opening}) {
   function handleAnime(url, pageNo, key, setFunction, pageSet) {
       opening.set(true);
       setIsLoading(true);
-      // !data &&
+      // animeData &&
       (async () => 
       {console.log("repeat", pageNo);await fetch(`${url}/${pageNo}`).then(res => res.json())
       .then((res) => {
@@ -63,7 +63,7 @@ function AMwindow({opening}) {
           <div className="body">
               <div className="select-button">
                   <button className="anime-page" onClick={() => setDisplay("anime")}>Anime</button>
-                  <button className="manga-page" onClick={() => {setDisplay("manga")}}>Manga</button>
+                  <button className="manga-page" onClick={() => setDisplay("manga")}>Manga</button>
                   <button className="saved-anime">Saved Anime</button>
                   <button className="saved-manga">Saved Manga</button>
               </div>

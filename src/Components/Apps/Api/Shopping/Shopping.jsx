@@ -1,9 +1,9 @@
 import { useState } from "react"
 
-import "./Products.css"
+import "./Shopping.css"
 import FirstScreen from "./FirstScreen/FirstScreen"
 
-function Products() {
+function Shopping() {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -15,4 +15,4 @@ function Products() {
     )
 }
 
-export default Products
+export default Shopping

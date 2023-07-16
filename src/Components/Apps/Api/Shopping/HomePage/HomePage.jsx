@@ -1,23 +1,16 @@
 import { useState, useEffect } from "react";
 import "./HomePage.css"
+import Footer from "../Footer/Footer";
 
 function HomePage() {
   const [data, setData] = useState([])
 
   useEffect(() => {
-    (async function() { await fetch("/src/Components/Apps/Api/Products/fulldata.json").then(res => res.json()).then(res => setData(res))})()
-    // getData()
+    (async function() { await fetch("/src/Components/Apps/Api/Shopping/fulldata.json").then(res => res.json()).then(res => setData(res))})()
     // const a =  fetch("/src/Components/Apps/Api/Products/fulldata.json").then(res => res.json()).then(res => res);
-    // setData(a)
   },[])
 
   console.log("data")    
-
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     getData()
-  //   }, 3000);
-  // }, [])
 
   return (
     <>
@@ -30,11 +23,7 @@ function HomePage() {
             <div className="banner">
             </div>
         </div>
-        <div className="footer">
-            <div className="home">Home</div>
-            <div className="you">You</div>
-            <div className="cart">Cart</div>
-        </div>
+        {/* <Footer /> */}
       </div>
     </>
   )

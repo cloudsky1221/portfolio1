@@ -1,6 +1,6 @@
 import './App.css'
 import AMworld from './Components/Apps/Api/AMworld/AMworld'
-import Products from './Components/Apps/Api/Products/Products'
+import Shopping from './Components/Apps/Api/Shopping/Shopping'
 
 import Background from './Components/Background/Background'
 
@@ -10,7 +10,7 @@ function App() {
     <>
     <div className="main">
       <div className="app">
-        <Products />
+        <Shopping />
         <AMworld />
       </div>
     </div>

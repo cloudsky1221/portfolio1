@@ -8,7 +8,6 @@ import AMwindow from "./AMwindow/AMwindow"
 function AMworld() {
 
     const [isOpen, setIsOpen] = useState(false)
-    const [isLoading, setIsLoading] = useState(true)
     // const [data, setdata] = useState(checkLocalStorage)
 
     function singleClick(e) {

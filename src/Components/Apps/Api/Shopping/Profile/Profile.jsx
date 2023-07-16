@@ -11,11 +11,6 @@ function Profile() {
             <div className="banner">
             </div>
         </div>
-        <div className="footer">
-            <div className="home">Home</div>
-            <div className="you">You</div>
-            <div className="cart">Cart</div>
-        </div>
     </div>
   )
 }
