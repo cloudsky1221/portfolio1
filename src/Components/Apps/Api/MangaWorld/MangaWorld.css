@@ -1,0 +1,16 @@
+/* .icon:hover {
+    background-color: rgba(225, 225, 225, 0.4);
+} */
+@font-face {
+    font-family: "w95fa";
+    src: url(./assets/w95fa.woff);
+}
+
+.anime>*, .anime button {
+    font-family: "w95fa";
+}
+
+.icon:focus,.icon:focus-visible {
+    background-color: #fff;
+}
+

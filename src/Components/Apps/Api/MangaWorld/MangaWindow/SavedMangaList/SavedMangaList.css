@@ -1,0 +1,39 @@
+.manga-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+    /* gap: 2rem; */
+}
+
+.data {
+    padding: 10px;
+    width: 140px;
+    height: 120px;
+    display: grid;
+    background-color: #e1e1e1;
+    /* justify-content: center; */
+    /* align-items: space-evenly; */
+
+    .image {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        height: 30px;
+        /* display: flex;
+        justify-content: center; */
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    & button {
+        height: 20px;
+    }
+}
