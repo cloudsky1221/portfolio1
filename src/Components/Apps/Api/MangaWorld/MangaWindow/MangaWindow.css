@@ -1,0 +1,80 @@
+.main-window {
+    width: 700px;
+    height: 510px;
+    background-color: #c7c7c7;
+}
+
+.title-bar {
+    width: 688px;
+    height: 30px;
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+}
+
+.minimize {
+    width: 25px;
+    height: 25px;
+    background-color: #c7c7c7;
+    color: black;
+}
+.close {
+    width: 25px;
+    height: 25px;
+    background-color: #c7c7c7;
+    color: black;
+}
+
+.body {
+    height: 460px;
+    display: flex;
+    color: black;
+}
+
+.select-button {
+    padding: 10px;
+    width: 160px;
+    height: 180px;
+    display: grid;
+}
+
+.manga-page, .saved-manga {
+    /* position: absolute; */
+    width: 150px;
+    height: 30px;
+    /* left: 6px; */
+    /* top: 63px; */
+    color: black;
+    background: #C7C7C7;
+    box-shadow: 1px 1px 0px 1px #000000, inset 2.5px 1.5px 0px #FFFFFF;
+}
+
+.text-area {
+    padding: 2px;
+    width: 500px;
+    height: 400px;
+    background-color: #fff;
+    text-align: left;
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.response-message {
+    width: 100%;
+    height: 25px;
+    background-color: #fff;
+    color: #000000;
+    box-shadow: 1px 1px 0px 1px #000000, inset 2.5px 1.5px 0px #C7C7C7;
+}
+
+
+

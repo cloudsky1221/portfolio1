@@ -3,7 +3,7 @@
 } */
 @font-face {
     font-family: "w95fa";
-    src: url(./w95fa.woff);
+    src: url(./assets/w95fa.woff);
 }
 
 .anime>*, .anime button {
@@ -14,98 +14,3 @@
     background-color: #fff;
 }
 
-.main-window {
-    width: 700px;
-    height: 510px;
-    background-color: #c7c7c7;
-}
-
-.title-bar {
-    width: 688px;
-    height: 30px;
-    background-color: blue;
-    display: flex;
-    justify-content: space-between;
-}
-
-.buttons {
-    display: flex;
-}
-
-.minimize {
-    width: 25px;
-    height: 25px;
-    background-color: #c7c7c7;
-    color: black;
-}
-.close {
-    width: 25px;
-    height: 25px;
-    background-color: #c7c7c7;
-    color: black;
-}
-
-.body {
-    display: flex;
-    color: black;
-}
-
-.select-button {
-    width: 200px;
-    height: 400px;
-    display: grid;
-}
-
-.anime-page, .manga-page, .saved-anime, .saved-manga {
-    /* position: absolute; */
-    width: 160px;
-    height: 30px;
-    /* left: 6px; */
-    /* top: 63px; */
-    color: black;
-    background: #C7C7C7;
-    box-shadow: 1px 1px 0px 1px #000000, inset 2.5px 1.5px 0px #FFFFFF;
-}
-
-.text-area {
-    width: 500px;
-    height: 400px;
-    background-color: #fff;
-    text-align: left;
-}
-
-.footer {
-    color: black;
-}
-
-.info {
-    height: 400px;
-}
-
-.top {
-    height: 360px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-area: 
-    "one two",
-    "three three";
-}
-
-.top>.image>img {
-    width: 100%;
-    height: 100%;
-}
-
-.main-info {
-    grid-column: 2/4;
-}
-
-.synopsis {
-    grid-column: 1/4;
-    overflow-y: scroll;
-}
-
-.foot {
-    height: 40px;
-    float: right;
-}

@@ -1,10 +1,10 @@
 import { useState } from "react"
-import "./AMworld.css"
 
 import icon from "/src/assets/react.svg"
-import AMwindow from "./AMwindow/AMwindow"
+import "./MangaWorld.css"
+import MangaWindow from "./MangaWindow/MangaWindow";
 
-function AMworld() {
+function MangaWorld() {
 
     const [isOpen, setIsOpen] = useState(false)
 
@@ -25,10 +25,10 @@ function AMworld() {
             <div className="icon" onClick={singleClick} onDoubleClick={doubleClick}>
                 <img src={icon} alt="" />
             </div>
-            <div className="name">anime/manga world</div>
-            {isOpen && <AMwindow opening={{open:isOpen, set:setIsOpen}}/>}
+            <div className="name">Manga world</div>
+            {isOpen && <MangaWindow opening={{open:isOpen, set:setIsOpen}}/>}
         </div>
     )
 }
 
-export default AMworld
+export default MangaWorld

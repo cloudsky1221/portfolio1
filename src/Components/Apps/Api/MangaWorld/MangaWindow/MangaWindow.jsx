@@ -1,18 +1,14 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-import "./AMwindow.css";
-import Anime from "./Anime/Anime";
+import "./MangaWindow.css";
 import Manga from "./Manga/Manga";
-import SavedAnimeList from "./SavedAnimeList/SavedAnimeList";
 import SavedMangaList from "./SavedMangaList/SavedMangaList";
 
-function AMwindow({opening}) {
-
-//   const [savedAnimeData, setSavedAnimeData] = useState([])
-//   const [savedMangaData, setSavedMangaData] = useState([])
+function MangaWindow({opening}) {
 
   const [display, setDisplay] = useState("intro")
+  const [responseMessage, setResponseMessage] = useState("Welcome to the Manga World!")
 
   return (
       <div className="main-window">
@@ -25,27 +21,25 @@ function AMwindow({opening}) {
           </div>
           <div className="body">
               <div className="select-button">
-                  <button className="anime-page" onClick={() => setDisplay("anime")}>Anime</button>
                   <button className="manga-page" onClick={() => setDisplay("manga")}>Manga</button>
-                  <button className="saved-anime" onClick={() => setDisplay("saved-anime")}>Saved Anime</button>
                   <button className="saved-manga" onClick={() => setDisplay("saved-manga")}>Saved Manga</button>
               </div>
               <div className="text-area">
-                  {display === "anime" && <Anime />}
-                  {display === "manga" && <Manga />}
-                  {display === "saved-anime" && <SavedAnimeList />}
-                  {display === "saved-manga" && <SavedMangaList />}
+                  {display === "manga" && <Manga setResponseMessage={setResponseMessage}/>}
+                  {display === "saved-manga" && <SavedMangaList setResponseMessage={setResponseMessage}/>}
               </div>
           </div>
           <div className="footer">
-              response text : successfull, getting data from the url, failure
+            <div className="response-message">
+              {responseMessage}
+            </div>
           </div>
       </div>
   )
 }
 
-export default AMwindow
+export default MangaWindow
 
-AMwindow.propTypes = {
+MangaWindow.propTypes = {
   opening:PropTypes.object
 }
