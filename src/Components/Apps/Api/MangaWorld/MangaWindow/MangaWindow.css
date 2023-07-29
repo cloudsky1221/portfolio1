@@ -42,7 +42,7 @@
     display: grid;
 }
 
-.manga-page, .saved-manga {
+.manga-page, .history, .saved-manga {
     /* position: absolute; */
     width: 150px;
     height: 30px;

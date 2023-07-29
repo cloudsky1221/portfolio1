@@ -1,38 +1,32 @@
-import { useEffect, useState } from "react"
 import PropTypes from "prop-types"
+import "./History.css"
+import { useEffect, useState } from "react"
 
-import "./SavedMangaList.css"
-import DisplayMangaInfo from "../Manga/DisplayMangaInfo"
-
-
-function SavedMangaList({setResponseMessage}) {
-
-  console.count("saved")
+function History({setResponseMessage}) {
 
 
-    const [mangaPage, setMangaPage] = useState(JSON.parse(localStorage.getItem("savedPageList")) || [])
-    const [mangaList, setMangaList] = useState(JSON.parse(localStorage.getItem("savedMangaList")) || [])
+    const [mangaPage, setMangaPage] = useState(JSON.parse(localStorage.getItem("historyPage")) || [])
+    const [mangaList, setMangaList] = useState(JSON.parse(localStorage.getItem("historyList")) || [])
     
-    const [ isDisplayOpen, setIsDisplayOpen ] = useState(false)
-    const [ mangaData, setMangaData ] = useState({})
+    // const [ mangaData, setMangaData ] = useState({})
     
     const [pageNo, setPageNo] = useState(1)
 
     const [clicks, setClicks] = useState(false)
 
     // const [saveMangaList, setSaveMangaList] = useState(mangaList)
+    useEffect(() => setResponseMessage("Your Search History"),[])
 
     useEffect(() => {
         mangaList.length === 0 ? setResponseMessage("The saved manga list is empty. Please save to see the list") : setResponseMessage("Click on the show more button to see full detail.")
     }, [])
 
     useEffect(() => {
-        localStorage.setItem("savedPageList",JSON.stringify(mangaPage))
-        localStorage.setItem("savedMangaList", JSON.stringify(mangaList))
+        localStorage.setItem("historyPage",JSON.stringify(mangaPage))
+        localStorage.setItem("historyList", JSON.stringify(mangaList))
     }, [clicks])
 
     function handleInfo(pageNumber) {
-        setIsDisplayOpen(true)
         setResponseMessage("To know more you can go to www.google.com")
         fetch(`https://api.jikan.moe/v4/manga/${pageNumber}`).then(res => res.json())
         .then((res) => {
@@ -40,7 +34,7 @@ function SavedMangaList({setResponseMessage}) {
             if (res.status) {
               if (res.status === 400) return;
             }
-            setMangaData(res.data)
+            // setMangaData(res.data)
         })
         .catch((err) => {
             console.log(err)
@@ -54,7 +48,6 @@ function SavedMangaList({setResponseMessage}) {
 
     return (
         <>
-        {isDisplayOpen ? <DisplayMangaInfo mangaData={mangaData}/>:
             <ul className="manga-list">
                 {mangaList.slice((pageNo-1) * 6, pageNo * 6).map((e, i) => {
                     return (
@@ -67,7 +60,7 @@ function SavedMangaList({setResponseMessage}) {
                     )
                 })}
             </ul>
-        }
+        
         <div className="list-foot">
                     <div className="pagination">
                         {pageNo <= 1 ? <button disabled>prev</button> : <button onClick={() => setPageNo(pageNo - 1)}>prev</button>}
@@ -76,11 +69,11 @@ function SavedMangaList({setResponseMessage}) {
                     </div>
                 </div>
         </>
-        )
+  )
 }
 
-export default SavedMangaList
+export default History
 
-SavedMangaList.propTypes = {
+History.propTypes = {
     setResponseMessage:PropTypes.func
 }

@@ -1,0 +1,39 @@
+.manga-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.data {
+    padding: 10px;
+    width: 140px;
+    height: 120px;
+    display: grid;
+    background-color: #e1e1e1;
+
+    .image {
+        height: 80px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .title {
+        height: 30px;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    & button {
+        margin-bottom: 2px;
+        height: 20px;
+    }
+}
+
+.list-foot {
+    margin-top: 40px;
+}
