@@ -4,8 +4,12 @@ import { useState } from "react";
 import "./MangaWindow.css";
 import Manga from "./Manga/Manga";
 import SavedMangaList from "./SavedMangaList/SavedMangaList";
+import History from "./History/History";
+import Footer from "./Footer/Footer";
 
 function MangaWindow({opening}) {
+
+  console.count("mangaWindow")
 
   const [display, setDisplay] = useState("intro")
   const [responseMessage, setResponseMessage] = useState("Welcome to the Manga World!")
@@ -22,17 +26,17 @@ function MangaWindow({opening}) {
           <div className="body">
               <div className="select-button">
                   <button className="manga-page" onClick={() => setDisplay("manga")}>Manga</button>
+                  <button className="history" onClick={() => setDisplay("history")}>History</button>
                   <button className="saved-manga" onClick={() => setDisplay("saved-manga")}>Saved Manga</button>
               </div>
               <div className="text-area">
                   {display === "manga" && <Manga setResponseMessage={setResponseMessage}/>}
+                  {display === "history" && <History setResponseMessage={setResponseMessage}/>}
                   {display === "saved-manga" && <SavedMangaList setResponseMessage={setResponseMessage}/>}
               </div>
           </div>
           <div className="footer">
-            <div className="response-message">
-              {responseMessage}
-            </div>
+            <Footer responseMessage={responseMessage} />
           </div>
       </div>
   )
